@@ -1,0 +1,25 @@
+PODS:
+  - AFNetworking (1.3.3)
+  - RBBAnimation (0.3.0)
+  - Reachability (3.1.1)
+  - RMSwipeTableViewCell (0.5.5)
+  - SDCAlertView (1.0):
+    - RBBAnimation (~> 0.3)
+    - SDCAutoLayout (~> 2.0)
+  - SDCAutoLayout (2.0.2)
+
+DEPENDENCIES:
+  - AFNetworking (= 1.3.3)
+  - Reachability (= 3.1.1)
+  - RMSwipeTableViewCell (= 0.5.5)
+  - SDCAlertView (= 1.0)
+
+SPEC CHECKSUMS:
+  AFNetworking: 5f5b2a731d6fc2082b8abc63d40fcaed5482c42f
+  RBBAnimation: 243d73be1a526f1b51d266b182e4aa0cfe9cbf64
+  Reachability: 8e9635e3cb4f98e7f825e51147f677ecc694d0e7
+  RMSwipeTableViewCell: d5cce898d39e8d1cdafd9533656768a054bb5f50
+  SDCAlertView: 846de61c58c8f443e15bf6052bcff2c0bd5cddc0
+  SDCAutoLayout: 4a963629725ed2b7d665e789ca4d6cfcd7446822
+
+COCOAPODS: 0.34.1

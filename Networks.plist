@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>custom</key>
+	<dict>
+		<key>displayName</key>
+		<string>Custom Network</string>
+		<key>slug</key>
+		<string>custom</string>
+		<key>className</key>
+		<string>CustomNetwork</string>
+		<key>description</key>
+		<string>Add your own website and create a personal social network.</string>
+		<key>order</key>
+		<integer>8</integer>
+		<key>setupFields</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Learn More</string>
+				<key>type</key>
+				<string>URLButton</string>
+				<key>url</key>
+				<string>http://postcardsocial.net/docs/</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Website URL</string>
+				<key>type</key>
+				<string>Field</string>
+				<key>property</key>
+				<string>siteUrl</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Username</string>
+				<key>type</key>
+				<string>Field</string>
+				<key>property</key>
+				<string>username</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Password</string>
+				<key>type</key>
+				<string>Field</string>
+				<key>property</key>
+				<string>password</string>
+			</dict>
+		</array>
+	</dict>
+	<key>facebook</key>
+	<dict>
+		<key>displayName</key>
+		<string>Facebook</string>
+		<key>slug</key>
+		<string>facebook</string>
+		<key>className</key>
+		<string>FacebookNetwork</string>
+		<key>description</key>
+		<string>Grant Postcard permission to post to your Facebook account and pages.</string>
+		<key>order</key>
+		<integer>3</integer>
+	</dict>
+	<key>twitter</key>
+	<dict>
+		<key>displayName</key>
+		<string>Twitter</string>
+		<key>slug</key>
+		<string>twitter</string>
+		<key>className</key>
+		<string>TwitterNetwork</string>
+		<key>description</key>
+		<string>Grant Postcard permission to post to your Twitter account(s).</string>
+		<key>order</key>
+		<integer>2</integer>
+	</dict>
+	<key>adn</key>
+	<dict>
+		<key>displayName</key>
+		<string>App.net</string>
+		<key>slug</key>
+		<string>adn</string>
+		<key>className</key>
+		<string>ADNNetwork</string>
+		<key>description</key>
+		<string>Log in to App.net to grant posting permissions.</string>
+		<key>order</key>
+		<integer>6</integer>
+		<key>setupFields</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Username</string>
+				<key>type</key>
+				<string>Field</string>
+				<key>property</key>
+				<string>username</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Password</string>
+				<key>type</key>
+				<string>Field</string>
+				<key>property</key>
+				<string>password</string>
+			</dict>
+		</array>
+	</dict>
+	<key>linkedin</key>
+	<dict>
+		<key>displayName</key>
+		<string>LinkedIn</string>
+		<key>slug</key>
+		<string>linkedin</string>
+		<key>className</key>
+		<string>LinkedInNetwork</string>
+		<key>description</key>
+		<string>Use your LinkedIn account to post profile status updates.</string>
+		<key>order</key>
+		<integer>4</integer>
+	</dict>
+	<key>buffer</key>
+	<dict>
+		<key>displayName</key>
+		<string>Buffer</string>
+		<key>slug</key>
+		<string>buffer</string>
+		<key>className</key>
+		<string>BufferNetwork</string>
+		<key>description</key>
+		<string>Use your Buffer account to schedule/buffer posts.</string>
+		<key>order</key>
+		<integer>7</integer>
+	</dict>
+	<key>tumblr</key>
+	<dict>
+		<key>displayName</key>
+		<string>Tumblr</string>
+		<key>slug</key>
+		<string>tumblr</string>
+		<key>className</key>
+		<string>TumblrNetwork</string>
+		<key>description</key>
+		<string>Post content to your Tumblog.</string>
+		<key>order</key>
+		<integer>5</integer>
+	</dict>
+</dict>
+</plist>

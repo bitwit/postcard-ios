@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13B42" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="ConnectedNetwork" representedClassName="ConnectedNetwork" syncable="YES">
+        <attribute name="instance" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="isEnabled" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="isHost" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="lastActivated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lastDeactivated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="networkId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="networkPosts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="NetworkPost" inverseName="connectedNetwork" inverseEntity="NetworkPost" syncable="YES"/>
+    </entity>
+    <entity name="NetworkPost" representedClassName="NetworkPost" syncable="YES">
+        <attribute name="didSucceed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="networkId" attributeType="String" syncable="YES"/>
+        <attribute name="postId" attributeType="String" syncable="YES"/>
+        <relationship name="connectedNetwork" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="ConnectedNetwork" inverseName="networkPosts" inverseEntity="ConnectedNetwork" syncable="YES"/>
+        <relationship name="postcard" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Postcard" inverseName="networkPosts" inverseEntity="Postcard" syncable="YES"/>
+    </entity>
+    <entity name="Person" representedClassName="Person" syncable="YES">
+        <attribute name="avatarUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fullName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastUsed" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="networkId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Postcard" representedClassName="Postcard" syncable="YES">
+        <attribute name="date" attributeType="Date" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" storedInTruthFile="YES" syncable="YES"/>
+        <attribute name="link" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mediaMimeType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tags" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="video" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="networkPosts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="NetworkPost" inverseName="postcard" inverseEntity="NetworkPost" syncable="YES"/>
+    </entity>
+    <entity name="Tag" representedClassName="Tag" syncable="YES">
+        <attribute name="lastUsed" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ConnectedNetwork" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="NetworkPost" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Person" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Postcard" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Tag" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>
